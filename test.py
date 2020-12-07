@@ -1,15 +1,7 @@
-start_number = 0
-finish_number = 100
+numbers = list(range(0,11))
 
-while start_number<finish_number:
-    if start_number % 2 == 0:
-        print(start_number)  
-    start_number += 1
-else: 
-    print('THE END')
+even = [num_even for num_even in numbers if num_even % 2 == 0]
+odd = [num_odd for num_odd in numbers if num_odd % 3 == 0]
+div_except_23 = [num_other for num_other in numbers if not num_other % 2 == 0 and not num_other % 3 == 0]
 
-for i in range(0, 101, 2): 
-	print(i) 
- 
-
-print(list(range(0, 101, 2)))
+print(div_except_23)
