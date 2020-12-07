@@ -36,38 +36,3 @@ print(zen_of_python_upper)
 #TODO: Task 1.3
 zen_of_python_replaced = zen_of_python.replace('i','&')
 print(zen_of_python_replaced)
-
-
-#TODO: Task 2
-a=1234
-
-#TODO: Task 2.1
-digits = []
-
-for i in str(a):
-    digits.append(int(i)) 
-
-a_spl = list(str(a))
-
-#*: Option 1
-product = int(a_spl[0])*int(a_spl[1])*int(a_spl[2])*int(a_spl[3])
-print(product)
-
-#*: Option 2
-result=1
-for i in a_spl:
-    result = result*int(i)
-print(result)
-
-#TODO: Task 2.2
-a_reverse = int(str(a)[::-1])
-print(a_reverse)
-
-#TODO: Task 2.3
-a = 2
-b = 3
-print(a,b)
-a,b=b,a
-print(a,b)
-
-
