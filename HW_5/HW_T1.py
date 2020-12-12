@@ -1,12 +1,7 @@
+numbers = list(range(0,101))
 
-first_num = (int(input('Please input first integer ')))
-last_num = (int(input('Please input last integer ')))
+even = [num_even for num_even in numbers if num_even % 2 == 0]
+odd = [num_odd for num_odd in numbers if num_odd % 3 == 0]
+div_except_23 = [num_other for num_other in numbers if not num_other % 2 == 0 and not num_other % 3 == 0]
 
-integers = list(range(first_num,last_num+1))
-float_num = []
-
-for i in integers:
-    i = float(i)
-    float_num.append(i)
-
-print(float_num, end=' ')
+print(div_except_23)
